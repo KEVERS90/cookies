@@ -6,7 +6,85 @@
   <base href="/cookies/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>*{margin:0;padding:0}@font-face{font-family:Steppe-Book;src:url(Steppe-Book.a7fc3ee738d3939e.ttf)}body{background-color:#5243f4;font-family:Steppe-Book,sans-serif;color:#fff}</style><link rel="stylesheet" href="styles.16f7382b4b1a403f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.16f7382b4b1a403f.css"></noscript></head>
+<style>*{margin:0;padding:0}@font-face{font-family:Steppe-Book;src:url(Steppe-Book.a7fc3ee738d3939e.ttf)}body{background-color:#5243f4;font-family:Steppe-Book,sans-serif;color:#fff}</style><link rel="stylesheet" href="styles.16f7382b4b1a403f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.16f7382b4b1a403f.css"></noscript>
+<style>
+/* ===== АДАПТИВ ===== */
+
+@media (max-width: 1200px) {
+  .container { max-width: 960px; padding: 0 20px; }
+  .main-title { font-size: 70px; }
+  .products-items { grid-template-columns: repeat(2, 1fr) !important; gap: 60px 24px; }
+  .main-image { max-width: 45%; }
+  .menu { margin-left: 120px; }
+}
+
+@media (max-width: 992px) {
+  .container { max-width: 720px; }
+  .main-title { font-size: 54px; }
+  .main-content { padding-top: 80px; padding-bottom: 120px; }
+  .main-text { font-size: 16px; }
+  .menu { margin-left: 40px; }
+  .menu-list { gap: 25px; }
+  .love-items { flex-direction: column; }
+  .love-item { width: 100% !important; height: auto !important; min-height: 320px; }
+  .love-item-white { padding: 60px 40px; }
+  .order-block { flex-direction: column; margin-top: 50px; }
+  .order-form { margin-left: 0 !important; padding: 40px 30px !important; max-width: 100% !important; }
+  .order-form-inputs input { width: 100% !important; }
+  .order-form-inputs .button.violet-button { width: 100% !important; }
+  .order-block-image { margin-left: 0 !important; height: auto !important; text-align: center; padding: 20px; }
+  .order-image { height: auto !important; max-width: 100%; top: 0 !important; position: static !important; }
+  .order-bg-image { display: none; }
+  .main-image { display: none; }
+  .line1, .line2, .line3 { display: none; }
+}
+
+@media (max-width: 768px) {
+  .container { max-width: 540px; padding: 0 16px; }
+  .header { padding: 20px 0; }
+  .header .container { flex-direction: column; gap: 15px; }
+  .menu { margin-left: 0; }
+  .menu-list { gap: 18px; flex-wrap: wrap; justify-content: center; }
+  .menu-item a { font-size: 14px; }
+  .main-title { font-size: 40px; margin-bottom: 15px; }
+  .main-text { font-size: 15px; margin-bottom: 30px; }
+  .main-content { padding-top: 40px; padding-bottom: 80px; }
+  .common-title { font-size: 36px; }
+  .products { padding: 60px 0; }
+  .products-items { grid-template-columns: 1fr !important; gap: 90px; margin-top: 60px; }
+  .products-item-image img { max-width: 80%; height: auto; top: -40px; }
+  .products-item-text { height: auto; min-height: 90px; }
+  .love { padding: 40px 0 80px; }
+  .love-item-white { padding: 40px 24px; }
+  .love-item-title { font-size: 20px; }
+  .love-item-text { font-size: 16px; }
+  .order { padding-bottom: 60px; }
+  .order-block { margin-top: 30px; }
+  .order-form { padding: 30px 20px !important; }
+  .order-form-inputs input {
+    width: 100% !important;
+    height: auto !important;
+    padding: 18px 20px !important;
+    font-size: 16px !important;
+  }
+  .button { width: 100% !important; max-width: 300px; }
+  .order-form-inputs .button.violet-button { width: 100% !important; height: auto !important; }
+  .footer { padding: 60px 0 30px; }
+  .rights { font-size: 14px; }
+  .currency { right: 15px; bottom: 15px; padding: 4px 8px; font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  .main-title { font-size: 32px; }
+  .common-title { font-size: 28px; }
+  .products-item-details { padding: 16px; }
+  .products-item-title { font-size: 16px; }
+  .products-item-price { font-size: 20px; }
+  .menu-list { gap: 12px; }
+  .menu-item a { font-size: 13px; }
+}
+</style>
+</head>
 <body>
   <app-root></app-root>
 <script src="runtime.5435ea6014387c9b.js" type="module"></script><script src="polyfills.415d18fae5720c9c.js" type="module"></script><script src="main.c01371cddceb82c4.js" type="module"></script></body>
